@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mieu Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a id="userlogin" class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Laptop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Desktop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Mobile</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input oninput="searchByInfo(event)" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+            <i id="cart_icon" class="fa-brands fa-opencart"></i>
+            <span id="cart_count">1</span>
+          </div>
+        </div>
+      </nav>
+      <!--End Navbar -->
+      <!-- Product Render -->
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Product Name</th>
+            <th onclick="sortByPrice()" scope="col">Product Price</th>
+            <th scope="col">Avatar</th>
+            <th scope="col">Category</th>
+            <th scope="col">Tools</th>
+          </tr>
+        </thead>
+        <tbody id="table_data">
+          <!-- <tr>
+            <th scope="row">1</th>
+            <td>Laptop Asus Gaming...</td>
+            <td>12000000</td>
+            <td>
+                <img style="width: 50px; height: 50px; border-radius: 50%;" src="https://cdn.tgdd.vn/Products/Images/44/302473/asus-gaming-rog-strix-scar-18-g834jy-i9-n6039w-thumb-600x600.jpg" >
+            </td>
+            <td>Laptop</td>
+            <td><button type="button" class="btn btn-danger">Mua</button></td>
+          </tr> -->
+        </tbody>
+      </table>
+      <!-- Product Render -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
